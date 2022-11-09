@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="./assets/Owl-carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/Owl-carousel/dist/assets/owl.theme.default.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+  <title>EOS</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg ">
+    <div class="container">
+      <a class="nav-brand" href="./index.html">
+        <img src="./assets/img/logo eos.png" alt="logo" height="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/product/catalog.html">Katalog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/e-course/index.html">E-Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/event/index.html">Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/event/rank.html">Rank</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <button type="button" class="btn btn-secondary me-3 px-4" data-bs-toggle="modal"
+            data-bs-target="#modalRegister">
+            Daftar
+          </button>
+          <button type="button" class="btn btn-primary me-3 px-4" data-bs-toggle="modal" data-bs-target="#modalLogin">
+            Masuk
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- modal login -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="row">
+            <div class="col-lg-6 p-0 modal-img">
+              <img src="./assets/img/login - register/img-auth.png" alt="img-auth" style="width: 100%" />
+            </div>
+            <div class="col-12 col-lg-6 position-relative">
+              <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"
+                style="right: 20px; top: 10px"></button>
+              <div class="p-modal">
+                <h1 style="font-size: 24px; font-weight: bold">
+                  Selamat Datang Di
+                  <span style="color: #204085">EOS Indonesia</span>
+                </h1>
+                <p style="color: #7a7a7a; margin-bottom: 16px; font-size: 14px">
+                  Silakan Masukan Akun Anda
+                </p>
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label" style="font-size: 14px">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Masukan email anda" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label" style="font-size: 14px">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                      placeholder="Masukan password anda" />
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input me-2" id="exampleCheck1" />
+                    <label class="form-check-label" for="exampleCheck1">Ingat Saya</label>
+                    <a href="#" class="float-end">Lupa Password</a>
+                  </div>
+                  <div class="modal-bottom">
+                    <button type="submit" class="btn btn-primary w-100" style="margin-bottom: 16px">
+                      Submit
+                    </button>
+                    <p>Belum punya akun? Silakan <a href="">Daftar</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal register -->
+  <div class="modal fade" id="modalRegister" tabindex="-1" aria-labelledby="modalrRegisterLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="row">
+            <div class="col-lg-6 p-0 modal-img">
+              <img src="./assets/img/login - register/img-auth.png" alt="img-auth" style="width: 100%" />
+            </div>
+            <div class="col-12 col-lg-6 position-relative form-scroll">
+              <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"
+                style="right: 20px; top: 10px"></button>
+              <div class="p-modal">
+                <h1 style="font-size: 24px; font-weight: bold">
+                  Selamat Datang Di
+                  <span style="color: #204085">EOS Indonesia</span>
+                </h1>
+                <p style="color: #7a7a7a; margin-bottom: 16px; font-size: 14px">
+                  Silakan Masukan Akun Anda
+                </p>
+                <form>
+                  <div class="mb-3">
+                    <label for="fullname" class="form-label" style="font-size: 14px">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Masukan Nama lengkap anda" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="textAreaa" class="form-label" style="font-size: 14px">Alamat lengkap</label>
+                    <textarea id="textArea" class="form-control" placeholder="Masukan alamat lengkap anda"
+                      rows="3"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="tgl-lahir" class="form-label">Tanggal Lahir</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">
+                        <i class="fa-regular fa-calendar" style="margin-right: 12px;"></i>
+                      </span>
+                      <input type="text" class="form-control datepicker_input form-select" placeholder="" aria-label=""
+                        aria-describedby="basic-addon1" id="tgl-lahir">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="gender" class="form-label" style="font-size: 14px">Jenis Kelamin</label>
+                    <select class="form-select" aria-label="Default select example" id="gender">
+                      <option selected>Pilih jenis kelamin</option>
+                      <option value="1">Pria</option>
+                      <option value="2">Wanita</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="noHp" class="form-label" style="font-size: 14px">Nomor Handphone</label>
+                    <input type="password" class="form-control" id="noHp" placeholder="Masukan nomor handphone anda" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="emailInput" class="form-label" style="font-size: 14px">Email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Masukan email anda" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label" style="font-size: 14px">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                      placeholder="Masukan password anda" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirmPass" class="form-label" style="font-size: 14px">Konfirmasi Password</label>
+                    <input type="password" class="form-control" id="confirmPass"
+                      placeholder="Tulis ulang password anda" />
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input me-2" id="exampleCheck1" />
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px">Saya membaca &
+                      menyetujui
+                      <a href="#">Syarat & Ketentuan</a></label>
+                  </div>
+                  <div class="modal-bottom">
+                    <button type="submit" class="btn btn-primary w-100" style="margin-bottom: 16px">
+                      Submit
+                    </button>
+                    <p>Sudah punya akun? Silakan <a href="#">Masuk</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+  <section class="header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="header-content-left">
+            <h1 class="fw-bold text-gradient-primary">Mau Jualan Online Gak Pake Ribet?</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Pariatur eligendi rerum voluptatibus nisi laudantium incidunt
+              explicabo tempore quidem qui commodi sunt sapiente accusantium
+              quae cupiditate, enim expedita nemo earum. Rerum?
+            </p>
+            <button class="btn btn-primary me-3 px-4">Klik Disini</button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="header-content-right">
+            <img src="./assets/img/beranda/ebp_banner3.png" alt="banner_header" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- content video -->
+  <section style="position: relative;">
+    <img src="./assets/img/beranda/e-green.png" alt="decor" class="decor"
+      style="position: absolute; right: 0; bottom: 0;">
+    <div class="container">
+      <div class="content-video d-flex justify-content-center align-items-center flex-column">
+        <div class="content-video-top text-center">
+          <h1 class="fw-bold text-gradient-primary">Tonton Video dibawah ini</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            laborum et accusantium est officiis, vel temporibus reprehenderit
+            porro harum. Totam voluptatibus hic reprehenderit quas perspiciatis
+            quia fuga ipsam quibusdam nam?
+          </p>
+        </div>
+      </div>
+      <div class="mx-auto" style="margin-bottom: 160px;">
+        <div class="ratio ratio-21x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/uJWoOUb8lIk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--Content product  -->
+  <section style="position: relative;">
+    <img src="./assets/img/beranda/e-blue.png" alt="decor" class="decor" style="position: absolute; bottom: -200px;">
+    <div class="container">
+      <div class="content-product d-flex justify-content-center align-items-center flex-column">
+        <div class="content-product-top text-center">
+          <h1 class="fw-bold text-gradient-primary">Produk Unggulan Kami</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis dolore soluta. Dicta assumenda
+            veniam, pariatur qui in voluptatum accusantium optio obcaecati rem id. Cumque perferendis dolor quasi
+            quisquam minima!</p>
+        </div>
+        <div class="content-product-bot">
+          <div class="row">
+            <div class="col-12 col-lg-4 d-flex justify-content-center flex-column text-center">
+              <img src="./assets/img/beranda/immunocal_10_sch_1.png" alt="product" width="300px" class="m-auto">
+              <p class="fw-bold">Immunocal 1 Box @10 Sachet</p>
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi morbi sit consectetur elit.<span>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center flex-column text-center">
+              <img src="./assets/img/beranda/paket_isoman_1.png" alt="product" width="300px" class="m-auto">
+              <p class="fw-bold">Immunocal 1 Box @10 Sachet</p>
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi morbi sit consectetur elit.<span>
+            </div>
+            <div class="col-12 col-lg-4 d-flex justify-content-center flex-column text-center">
+              <img src="./assets/img/beranda/urad.png" alt="product" width="300px" class="m-auto">
+              <p class="fw-bold">Immunocal 1 Box @10 Sachet</p>
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi morbi sit consectetur elit.<span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center my-5">
+            <button class="btn btn-secondary">Lihat Produk lainnya</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Reseller -->
+  <section style="position: relative;">
+    <img src="./assets/img/beranda/e-green.png" alt="decor" class="decor" style="position: absolute; right: 0; top: 0;">
+    <div class="container">
+      <div class="content-reseller mx-auto">
+        <div class="content-reseller-top text-center">
+          <h1 class="fw-bold text-gradient-primary">Reseller Terbaik Bulan ini</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum tempore fugiat rerum distinctio, harum
+            maiores a repellendus dolor sapiente rem suscipit debitis impedit ea. Doloribus amet quo sint debitis nulla.
+          </p>
+          <div>
+            <h3 class="text-center text-gradient-primary" style="font-size: 22px;">Ranking Akan direset dalam</h3>
+            <div class="d-flex justify-content-center py-5">
+              <div class="row text-center">
+                  <div class="rounded-1 d-flex align-content-center mx-auto"
+                      style="background-color: #EBF7FF; width: 60px; height: 60px;">
+                      <p class="d-flex align-items-center text-gradient-primary fs-2 fw-bold m-0">
+                          23
+                      </p>
+                  </div>
+                  <p class="pt-1" style="color: #7a7a7a; margin: 0;">Hari</p>
+              </div>
+
+
+              <div class="row">
+                  <div class="rounded-1 d-flex align-content-center mx-auto"
+                      style="background-color: #EBF7FF; width: 60px; height: 60px;">
+                      <p class="d-flex align-items-center text-gradient-primary fs-2 fw-bold m-0">
+                          10
+                      </p>
+                  </div>
+                  <p class="pt-1" style="color: #7a7a7a; margin: 0;">Jam</p>
+              </div>
+
+              <div class="row">
+                  <div class="rounded-1 d-flex align-content-center mx-auto"
+                      style="background-color: #EBF7FF; width: 60px; height: 60px;">
+                      <p class="d-flex align-items-center text-gradient-primary fs-2 fw-bold m-0">
+                          34
+                      </p>
+                  </div>
+                  <p class="pt-1" style="color: #7a7a7a; margin: 0;">Menit</p>
+              </div>
+
+
+              <div class="row">
+                  <div class="rounded-1 d-flex align-content-center mx-auto"
+                      style="background-color: #EBF7FF; width: 60px; height: 60px;">
+                      <p class="d-flex align-items-center text-gradient-primary fs-2 fw-bold m-0">
+                          17
+                      </p>
+                  </div>
+                  <p class="pt-1" style="color: #7a7a7a; margin: 0;">Detik</p>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="content-table-reseller">
+          <div class="row justify-content-center">
+            <div class="card justify-content-center"
+              style="width: 1000px; height: 400px; border: none; box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.13);">
+              <div class="col-md-12 table-responsive">
+                <div class="table-responsive">
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Seller</th>
+                        <th scope="col">id Pengguna</th>
+                        <th scope="col">Total Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody class="border-top">
+                      <tr>
+                        <div>
+                          <th scope="row"><img src="./assets/img/beranda/medal1.png" alt="medal" width="40"></th>
+                          <td class="d-flex align-items-center">
+                            <div class="av-table">
+                              <img src="./assets/img/person.webp" alt="avatar-table" width="50" height="50"
+                                class="rounded-circle">
+                            </div>
+                            <div class="pl-3 seller-table">
+                              <p class="m-0">Jhon Dhoe</p>
+                            </div>
+                          </td>
+                          <td>000000000</td>
+                          <td>@5000000</td>
+                        </div>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="./assets/img/beranda/medal2.png" alt="medal" width="40"></th>
+                        <td class="d-flex align-items-center">
+                          <div class="av-table">
+                            <img src="./assets/img/person.webp" alt="avatar-table" width="50" height="50"
+                              class="rounded-circle">
+                          </div>
+                          <div class="pl-3 seller-table">
+                            <p class="m-0">Jhon Dhoe</p>
+                          </div>
+                        </td>
+                        <td>11111111111111</td>
+                        <td>@500000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="./assets/img/beranda/medal3.png" alt="medal" width="40"></th>
+                        <td class="d-flex align-items-center">
+                          <div class="av-table">
+                            <img src="./assets/img/person.webp" alt="avatar-table" width="50" height="50"
+                              class="rounded-circle">
+                          </div>
+                          <div class="pl-3 seller-table">
+                            <p class="m-0">Jhon Dhoe</p>
+                          </div>
+                        </td>
+                        <td>2222222222222</td>
+                        <td>@400000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center py-3 py-md-0">
+                <a href="./pages/event/rank.html" class="btn btn-secondary px-5 py-2">Lihat lainnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- content benefit -->
+  <section class="pt-3" style="position: relative;">
+    <img src="./assets/img/beranda/e-blue.png" alt="decor" class="decor" style="position: absolute; left: 0;">
+    <div class="container">
+      <div class="content-benefit d-flex justify-content-center align-items-center flex-column">
+        <div class="content-benefit-top text-center">
+          <h1 class="fw-bold text-gradient-primary">Keuntungan Apa saja yang didapat</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam officiis, nihil consectetur dolorum ipsa
+            repellat accusantium! Nesciunt cum voluptas, aliquam dolorum quod tempore voluptatum, recusandae quia id sed
+            consequatur nemo!</p>
+        </div>
+        <div class="content-benefit-bot">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="card d-flex">
+                  <div class="card-body text-center">
+                    <img src="./assets/img/beranda/smartphone_1.png" alt="">
+                    <p class="fw-bold">Dilakukan Cukup Dengan Handphone</p>
+                    <span>Semua transaksi baik promosi, penjualan, pemesanan produk hingga proses pengiriman dilakukan
+                      melalui handphone anda, Bisnis dalam genggaman.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <img src="./assets/img/beranda/quality.png" alt="">
+                    <p class="fw-bold">Produk Berkualitas</p>
+                    <span>Semua produk E-BESTPRO telah melalui proses uji klinis dan mendapat sertifikasi kesehatan,
+                      Produk siap jual, Siap Packing dan Kirim, tanpa khawatir stok produk dan keamanan dala pengiriman
+                      pesanan.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="card d-flex">
+                  <div class="card-body text-center">
+                    <img src="./assets/img/beranda/profits.png" alt="">
+                    <p class="fw-bold">Keuntungan Pasti Dari Penjualan Produk</p>
+                    <span>Tidak perlu mengkhawatirkan perang harga sesama penjual. Karena perusahaan kami bekerja sama
+                      secara eksklusif dengan Produsen produk, sehingga tidak akan ada persaingan dengan produk yang
+                      sama. Karena bisnis kami menggunakan sistem pemasaran satu pintu reseller & dropshipper.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="card d-flex justfy-content-center align-items-center">
+                  <div class="card-body text-center justfy-content-center">
+                    <img src="./assets/img/beranda/profit.png" alt="">
+                    <p class="fw-bold">Komisi Pasti Menambah Penghasilan Anda</p>
+                    <span>Selain keuntungan langsung dari penjualan produk, pendapatan lain berupa komisi didapat dari
+                      komisi referal dengan mengajak kawan, saudaran, rekan kerja, dan siapapun untuk bergabung dan
+                      menjadi reseller dan dropshiper, serta didapat dari repeat order orang yang anda ajak bergabung
+                      langsung.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="card d-flex justfy-content-center align-items-center">
+                  <div class="card-body text-center justfy-content-center">
+                    <img src="./assets/img/beranda/ux_1.png" alt="">
+                    <p class="fw-bold">Tools Promosi Siap pakai</p>
+                    <span>Kebutuhan bahan untuk promosi baik promo produk maupun promo bisnis Reseller dan dropshiper
+                      disediakan oleh tim E-BESTPRO dan siap pakai kapanpun lewat handphone anda, seperti foto, video,
+                      artikel, e-brosur, dan bentuk e-promo lainnya.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="card d-flex justfy-content-center align-items-center">
+                  <div class="card-body text-center justfy-content-center">
+                    <img src="./assets/img/beranda/responsive.png" alt="">
+                    <p class="fw-bold">Website Toko Online Eksklusif</p>
+                    <span>Website toko online didesain praktis dan dinamis untuk mempermudah proses semua transaksi
+                      kebutuhan Reseller dan dropshiper.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- content testimoni -->
+  <section class="mb-5" style="position: relative;">
+    <img src="./assets/img/beranda/e-green.png" alt="decor" class="decor"
+      style="position: absolute; right: 0; top: 0; width: 500px;">
+    <div class="text-center">
+      <h1 class="fw-bold text-gradient-primary">Apa Kata Mereka</h1>
+      <p class="subtitle">Setelah join program reseller E-bestpro</p>
+    </div>
+
+    <div class="container">
+      <div class="row mb-5">
+        <div class="owl-carousel owl-theme p-0">
+          <div class="card d-flex rounded-lg align-items-center"
+            style="min-height: 80px;overflow:hidden;position: relative;">
+            <div class="card-body d-flex align-items-center">
+              <img class="rounded-circle me-2" src="./assets/img/person.webp" alt="testi" width="50" height="50"
+                style="object-fit: cover;">
+              <div class="customer">
+                <p class="m-0 fw-bold">Clara</p>
+                <p class="m-0" style="font-size: 12px; color: #6D7280">Editor</p>
+              </div>
+              <div class="testi-text">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed vero accusantium
+                  praesentium ipsum sit, aliquid iusto excepturi laudantium, veniam, fuga incidunt facere. Quod
+                  velit a unde expedita ex neque."</p>
+              </div>
+            </div>
+          </div>
+          <div class="card d-flex rounded-lg align-items-center"
+            style="min-height: 80px;overflow:hidden;position: relative;">
+            <div class="card-body d-flex align-items-center">
+              <img class="rounded-circle me-2" src="./assets/img/person.webp" alt="testi" width="50" height="50"
+                style="object-fit: cover;">
+              <div class="customer">
+                <p class="m-0 fw-bold">Clara</p>
+                <p class="m-0" style="font-size: 12px; color: #6D7280">Editor</p>
+              </div>
+              <div class="testi-text">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed vero accusantium
+                  praesentium ipsum sit, aliquid iusto excepturi laudantium, veniam, fuga incidunt facere. Quod
+                  velit a unde expedita ex neque."</p>
+              </div>
+            </div>
+          </div>
+          <div class="card d-flex rounded-lg align-items-center"
+            style="min-height: 80px;overflow:hidden;position: relative;">
+            <div class="card-body d-flex align-items-center">
+              <img class="rounded-circle me-2" src="./assets/img/person.webp" alt="testi" height="50"
+                style="object-fit: cover;">
+              <div class="customer">
+                <p class="m-0 fw-bold">Clara</p>
+                <p class="m-0" style="font-size: 12px; color: #6D7280">Editor</p>
+              </div>
+              <div class="testi-text">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed vero accusantium
+                  praesentium ipsum sit, aliquid iusto excepturi laudantium, veniam, fuga incidunt facere. Quod
+                  velit a unde expedita ex neque."</p>
+              </div>
+            </div>
+          </div>
+          <div class="card d-flex rounded-lg align-items-center"
+            style="min-height: 80px;overflow:hidden;position: relative;">
+            <div class="card-body d-flex align-items-center">
+              <img class="rounded-circle me-2" src="./assets/img/person.webp" alt="testi" width="50" height="50"
+                style="object-fit: cover;">
+              <div class="customer">
+                <p class="m-0 fw-bold">Clara</p>
+                <p class="m-0" style="font-size: 12px; color: #6D7280">Editor</p>
+              </div>
+              <div class="testi-text">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed vero accusantium
+                  praesentium ipsum sit, aliquid iusto excepturi laudantium, veniam, fuga incidunt facere. Quod
+                  velit a unde expedita ex neque."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mx-auto">
+        <div class="ratio ratio-21x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/uJWoOUb8lIk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--F.A.Q  -->
+  <section>
+    <div class="container">
+      <div class="faq d-flex justify-content-center align-items-center flex-column">
+        <div class="faq-top text-center">
+          <h1 class="fw-bold text-gradient-primary">F.A.Q</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, facilis magnam asperiores quaerat
+            distinctio dolor eveniet commodi laboriosam laborum culpa, ad porro vitae odio itaque voluptas facere ab ex
+            illo?</p>
+        </div>
+        <div class="faq-bot w-full">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="./assets/Owl-carousel/dist/owl.carousel.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+  </script>
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      nav: true,
+      margin: 10,
+      autoplay: false,
+      dots: false,
+      slideBy: 1,
+      stagePadding: 20,
+      navText: [
+        '<i class="fa-solid fa-angle-left"></i>',
+        '<i class="fa-solid fa-angle-right"></i>'],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1
+        },
+        1200: {
+          items: 2
+        }
+      }
+    })
+  </script>
+
+  <script src="./script/utilities.js"></script>
+</body>
+
+</html>

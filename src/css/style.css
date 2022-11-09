@@ -1,0 +1,291 @@
+.navbar{
+  transition: 0.5s;
+}
+
+.nav-link {
+  margin-left: 40px;
+}
+
+.nav-item a {
+  color: #bbbbbb;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.nav-link a:hover {
+  color: #3A69CE !important;
+}
+
+.nav-scroll{
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-login {
+  background: linear-gradient(90.47deg, #3a69ce 0.58%, #87aaf5 99.59%);
+  border: none;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.btn-login:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: white;
+}
+
+.btn-regis {
+  border-color: #3d6bcf;
+  color: #3d6bcf;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.btn-regis:hover {
+  background-color: #3d6bcf;
+  color: white;
+}
+
+/* header */
+.header {
+  background-color: #F6F8FC;
+  height: 100vh;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.header-content-left p{
+  font-size: 20px;
+  margin: 23px 0 35px;
+}
+
+.header-content-left button {
+  padding: 13px 26px 13px 26px;
+  color: white;
+  background: linear-gradient(90.47deg, #3a69ce 0.58%, #87aaf5 99.59%);
+  border: none;
+  border-radius: 8px;
+}
+
+.header-content-left button:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* content */
+.content-video-top, .content-product-top, .content-reseller-top, .content-benefit-top, .faq-top{
+    max-width: 1200px;
+}
+
+.content-video-top h1, .content-product-top h1, .content-reseller-top h1, .content-benefit-top h1, .faq-top h1{
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.content-video-top p, .content-product-top p, .content-reseller-top p, .content-benefit-top p, .faq-top p, .subtitle{
+    font-size: 16px;
+    margin-bottom: 3rem;
+}
+
+.content-benefit-bot .card{
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.13);
+    border: none;
+    margin-bottom: 50px;
+    width: 384px;
+    height: 446px;
+    padding: 60px 0 30px;
+}
+
+/* table reseller */
+
+.content-table-reseller .card{
+  width: 1000px;
+  height: 400px;
+}
+/* .card-table{
+    width: 100%;
+    max-width: 900px;
+    height: 150px;
+} */
+
+/* .table{
+  width: 100%;
+  min-width: 1000px !important;
+}
+
+.av-table img{
+  border-radius: 100%;
+} */
+
+/* .table-wrap{
+  overflow-x: scroll;
+} */
+
+/* .content-table-reseller table thead th{
+  border: none;
+  padding: 30px;
+  font-size: 14px;
+  color: #7A7A7A;
+}
+
+.content-table-reseller table tbody td{
+  border: none;
+  padding: 30px;
+  font-size: 14px;
+  color: #7A7A7A;
+  vertical-align: middle;
+} */
+
+.content-table-reseller table thead tr{
+  background: #fff;
+  border-bottom: 4px solid #eceffa;
+}
+/* content testi */
+.card-testi{
+  margin-bottom: 134px;
+}
+
+.content-testi-bot .card{
+  width: 480px;
+  height: 160px;
+}
+
+.card-testi .customer{
+  margin-left: 15px;
+}
+
+.testi-text{
+  font-size: 14px !important;
+  margin-left: 20px;
+}
+
+/* FAQ */
+.faq-bot{
+  width: 100%;
+}
+
+/* modal */
+.p-modal{
+  padding-top: 3em;
+  padding-right: 1rem;
+}
+
+.modal-body{
+  overflow-x: hidden;
+}
+
+.form-scroll{
+ height: 500px;
+ overflow-y: auto;
+ overflow-x: hidden;
+}
+
+/* owl */
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  z-index: 999;
+  visibility: hidden;
+}
+
+.owl-nav>* {
+  visibility: visible;
+}
+
+.owl-nav .owl-prev i {
+  margin-right: 1px;
+}
+
+.owl-nav .owl-next i {
+  margin-left: 0;
+}
+
+.owl-carousel .owl-item img{
+  display: block;
+  width: 50px;
+}
+
+/* margin-bottom */
+.content-product, .content-reseller, .content-benefit, .content-testi, .faq{
+    margin-bottom: 160px;
+}
+
+@media screen and (max-width: 543px) {
+  .nav-link {
+    margin-left: 16px;
+  }
+
+  .nav-scroll{
+   display: none;
+  }
+
+  /* header */
+  .header-content-right {
+    display: none;
+  }
+
+  /* table reseller */
+  .content-table-reseller table thead th{
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    color: #7A7A7A;
+  }
+  
+  .content-table-reseller table tbody td{
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    color: #7A7A7A;
+    vertical-align: middle;
+  }
+
+  /* modal */
+  .modal-img{
+    display: none;
+  }
+
+  .p-modal{
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .modal-bottom{
+    text-align: center;
+  }
+
+  .table-wrap{
+    overflow-x: scroll !important;
+  }
+
+  .av-table img{
+    border-radius: 100%;
+  }
+  
+  .content-table-reseller table thead th{
+    border: none;
+    padding: 30px;
+    font-size: 14px;
+    color: #7A7A7A;
+  }
+  
+  .content-table-reseller table tbody td{
+    border: none;
+    padding: 30px;
+    font-size: 14px;
+    color: #7A7A7A;
+    vertical-align: middle;
+  }
+  
+  .content-table-reseller table thead tr{
+    background: #fff;
+    border-bottom: 4px solid #eceffa;
+  }
+
+  .content-table-reseller .card{
+    overflow-x: scroll;
+    width: 0;
+    height: 0;
+  }
+}
